@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
     <title>Bodyshape - Transform Your Body</title>
   </head>
+
   <body class="bg-[#000000] text-white">
     <!-- Header -->
     <header
@@ -13,13 +23,21 @@
     >
       <div class="flex items-center flex-col gap-3">
         <div class="flex items-center gap-2">
-          <img src="/images/logo_left.png" alt="" class="w-8 h-auto" />
+          <img
+            src="/images/logo_left.png"
+            alt="logo left icon"
+            class="w-8 h-auto"
+          />
           <h1
             class="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#F66844] to-[#FF921B80]"
           >
             Bodyshape
           </h1>
-          <img src="/images/logo_right.png" alt="" class="w-8 h-auto" />
+          <img
+            src="/images/logo_right.png"
+            alt="logo right icon"
+            class="w-8 h-auto"
+          />
         </div>
         <p
           class="text-sm bg-clip-text text-transparent bg-gradient-to-r from-[#F66844] to-[#FF921B80]"
@@ -46,5 +64,42 @@
         </button>
       </div>
     </header>
+
+    <!-- Hero -->
+    <section
+      class="relative w-full h-[804px] bg-cover bg-center bg-no-repeat text-white"
+      style="background-image: url('/images/banner.png')"
+    >
+      <!-- Content -->
+      <div
+        class="relative max-w-[1440px] mx-auto px-6 md:px-12 text-left mt-52"
+      >
+        <h2
+          class="text-4xl md:text-[64px] font-semibold mb-4 leading-tight tracking-wider"
+        >
+          Transform <br />
+          Your Body
+        </h2>
+
+        <p class="max-w-md mb-12 text-[#FFFFFF80] text-sm sm:text-base">
+          We are dedicated to helping you transform your body and mind through
+          the power of fitness.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <button
+            class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-6 py-3 font-semibold cursor-pointer"
+          >
+            Get Started
+          </button>
+          <button
+            class="border border-[#F66844] px-6 py-3 flex items-center gap-2 cursor-pointer"
+          >
+            <img src="/images/play_circle.png" alt="play circle icon" /> Watch
+            Reviews
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
