@@ -8,6 +8,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <style>
       body {
         font-family: "Open Sans", sans-serif;
@@ -26,21 +35,21 @@
           <img
             src="/images/logo_left.png"
             alt="logo left icon"
-            class="w-8 h-auto"
+            class="w-6 sm:w-8 h-auto"
           />
           <h1
-            class="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#F66844] to-[#FF921B80]"
+            class="font-semibold sm:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#F66844] to-[#FF921B80]"
           >
             Bodyshape
           </h1>
           <img
             src="/images/logo_right.png"
             alt="logo right icon"
-            class="w-8 h-auto"
+            class="w-6 sm:w-8 h-auto"
           />
         </div>
         <p
-          class="text-sm bg-clip-text text-transparent bg-gradient-to-r from-[#F66844] to-[#FF921B80]"
+          class="text-xs sm:text-sm bg-clip-text text-transparent bg-gradient-to-r from-[#F66844] to-[#FF921B80]"
         >
           Unleash your inner athlete
         </p>
@@ -67,25 +76,21 @@
 
     <!-- Hero -->
     <section
-      class="relative w-full h-[804px] bg-contain bg-center bg-no-repeat text-white"
+      class="relative w-full h-[50vh] lg:h-[100vh] bg-contain bg-center bg-no-repeat text-white"
       style="background-image: url('/images/banner.png')"
     >
-      <!-- Content -->
       <div
-        class="relative max-w-[1440px] mx-auto px-6 md:px-12 text-left mt-52"
+        class="relative max-w-[1440px] mx-auto px-6 md:px-12 text-left mt-20 md:mt-52"
       >
         <h2
-          class="text-4xl md:text-[64px] font-semibold mb-4 leading-tight tracking-wider"
+          class="text-5xl md:text-[64px] font-semibold mb-4 leading-tight tracking-wider"
         >
-          Transform <br />
-          Your Body
+          Transform <br />Your Body
         </h2>
-
         <p class="max-w-md mb-12 text-[#FFFFFF80] text-sm sm:text-base">
           We are dedicated to helping you transform your body and mind through
           the power of fitness.
         </p>
-
         <div class="flex flex-col sm:flex-row gap-4">
           <button
             class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-6 py-3 font-semibold cursor-pointer"
@@ -93,10 +98,10 @@
             Get Started
           </button>
           <button
-            class="border border-[#F66844] px-6 py-3 flex items-center gap-2 cursor-pointer"
+            class="border border-[#F66844] px-6 py-3 flex items-center justify-center gap-2 cursor-pointer"
           >
-            <img src="/images/play_circle.png" alt="play circle icon" /> Watch
-            Reviews
+            <i class="fa-regular fa-circle-play text-[#FF921B] text-xl"></i>
+            Watch Reviews
           </button>
         </div>
       </div>
@@ -104,18 +109,22 @@
 
     <!-- Fitness Plans -->
     <section
-      class="relative w-full h-[804px] bg-contain bg-center bg-no-repeat text-white"
+      class="relative w-full h-full bg-contain bg-center bg-no-repeat text-white"
       style="background-image: url('/images/roated_banner.png')"
     >
-      <div class="max-w-[1440px] mx-auto px-6 py-16 relative">
-        <h3 class="text-2xl md:text-[40px] font-semibold mb-20">
+      <div class="max-w-[1440px] mx-auto px-6 py-16">
+        <h3
+          class="text-2xl sm:text-[30px] md:text-[40px] font-semibold mb-10 xl:mb-20"
+        >
           Fitness Plans & <span class="text-[#FF921B]">Nutritions</span>
         </h3>
 
-        <div class="px-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-0 text-center">
+        <div
+          class="xl:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 text-center"
+        >
           <!-- Card 1 -->
           <div
-            class="flex flex-col items-center gap-4 border border-[#FF921B] border-t-0 border-l-0 p-8"
+            class="flex flex-col items-center gap-4 border border-[#FF921B] border-t-0 border-l-0 p-6 xl:p-8"
           >
             <img
               src="/images/workout 1.png"
@@ -129,10 +138,9 @@
               to food.
             </p>
           </div>
-
           <!-- Card 2 -->
           <div
-            class="flex flex-col items-center gap-4 border border-[#FF921B] border-t-0 p-8"
+            class="flex flex-col items-center gap-4 border border-[#FF921B] border-t-0 border-r-0 lg:border-r p-6 xl:p-8"
           >
             <img
               src="/images/yoga 1.png"
@@ -146,10 +154,9 @@
               to food.
             </p>
           </div>
-
           <!-- Card 3 -->
           <div
-            class="flex flex-col items-center gap-4 border border-[#FF921B] border-t-0 border-r-0 p-8"
+            class="flex flex-col items-center gap-4 border border-[#FF921B] border-t-0 border-r lg:border-r-0 border-l-0 lg:border-l p-6 xl:p-8"
           >
             <img
               src="/images/bicycle 1.png"
@@ -163,10 +170,9 @@
               to food.
             </p>
           </div>
-
           <!-- Card 4 -->
           <div
-            class="flex flex-col items-center gap-4 border border-[#FF921B] border-l-0 border-b-0 p-8"
+            class="flex flex-col items-center gap-4 border border-[#FF921B] border-l sm:border-l-0 border-b-0 border-r-0 lg:border-r p-6 xl:p-8"
           >
             <img
               src="/images/bicycle 1.png"
@@ -180,10 +186,9 @@
               to food.
             </p>
           </div>
-
           <!-- Card 5 -->
           <div
-            class="flex flex-col items-center gap-4 border border-[#FF921B] border-b-0 p-8"
+            class="flex flex-col items-center gap-4 border border-[#FF921B] border-b-0 border-l-0 lg:border-l p-6 xl:p-8"
           >
             <img
               src="/images/bicycle 1.png"
@@ -197,10 +202,9 @@
               to food.
             </p>
           </div>
-
           <!-- Card 6 -->
           <div
-            class="flex flex-col items-center gap-4 border border-[#FF921B] border-r-0 border-b-0 p-8"
+            class="flex flex-col items-center gap-4 border border-[#FF921B] border-r-0 border-b-0 p-6 xl:p-8"
           >
             <img
               src="/images/bicycle 1.png"
@@ -220,17 +224,19 @@
 
     <!-- Subscription Plans -->
     <section class="max-w-[1440px] mx-auto py-16 px-6">
-      <h3 class="text-2xl md:text-[40px] font-semibold mb-20">
+      <h3
+        class="text-2xl sm:text-[30px] md:text-[40px] font-semibold mb-10 xl:mb-20"
+      >
         Subscribe To <span class="text-[#FF921B]">Plans</span>
       </h3>
       <!-- Plans number 1 -->
-      <div class="px-20 grid md:grid-cols-3 gap-14">
+      <div class="xl:px-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-14">
         <div
           class="bg-gradient-to-b from-[#131313] to-[#39393900] p-8 text-center"
         >
           <h4 class="font-semibold text-2xl mb-4">Fit</h4>
           <p class="text-[#FFFFFF80] mb-12">Plan Exp. 16/11/2024</p>
-          <p class="text-4xl font-semibold mb-4">
+          <p class="text-3xl md:text-4xl font-semibold mb-4">
             ₹1200 /<span class="text-xl text-[#FFFFFF80]">Month</span>
           </p>
           <p class="my-8 text-[#FFFFFF80]">Streaming</p>
@@ -243,11 +249,11 @@
 
         <!-- Plans number 2 -->
         <div
-          class="bg-gradient-to-b from-[#131313] to-[#39393900] p-8 text-center scale-110"
+          class="bg-gradient-to-b from-[#131313] to-[#39393900] p-8 text-center lg:scale-110"
         >
           <h4 class="font-semibold text-2xl mb-4">Fit</h4>
           <p class="text-[#FFFFFF80] mb-12">Plan Exp. 16/11/2024</p>
-          <p class="text-4xl font-semibold mb-4">
+          <p class="text-3xl md:text-4xl font-semibold mb-4">
             ₹1000 /<span class="text-xl text-[#FFFFFF80]">Month</span>
           </p>
           <p class="my-8 text-[#FFFFFF80]">Streaming</p>
@@ -264,7 +270,7 @@
         >
           <h4 class="font-semibold text-2xl mb-4">Fit</h4>
           <p class="text-[#FFFFFF80] mb-12">Plan Exp. 16/11/2024</p>
-          <p class="text-4xl font-semibold mb-4">
+          <p class="text-3xl md:text-4xl font-semibold mb-4">
             ₹1500 /<span class="text-xl text-[#FFFFFF80]">Month</span>
           </p>
           <p class="my-8 text-[#FFFFFF80]">Streaming</p>
@@ -279,11 +285,13 @@
 
     <!-- Trainers -->
     <section class="max-w-[1440px] mx-auto py-16 px-6">
-      <h3 class="text-2xl md:text-[40px] font-semibold mb-20">
+      <h3
+        class="text-2xl sm:text-[30px] md:text-[40px] font-semibold mb-10 xl:mb-20"
+      >
         Join Out <span class="text-[#FF921B]">Trainer</span>
       </h3>
 
-      <div class="px-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="xl:px-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         <img
           src="/images/trainer_01.png"
           class="w-full h-auto"
@@ -303,53 +311,65 @@
     </section>
 
     <!-- Why Join -->
-    <section>
-      <div class="max-w-[1440px] mx-auto py-16 px-6">
-        <h3 class="text-2xl md:text-[40px] font-semibold mb-20">
-          Why Join With <span class="text-[#FF921B]">Us?</span>
-        </h3>
+    <section class="relative max-w-[1440px] mx-auto py-16 px-6">
+      <h3
+        class="text-2xl sm:text-[30px] md:text-[40px] font-semibold mb-10 xl:mb-20"
+      >
+        Why Join With <span class="text-[#FF921B]">Us?</span>
+      </h3>
 
-        <div class="px-20 flex justify-between gap-20">
-          <div>
-            <ul
-              class="min-w-[500px] bg-gradient-to-r from-[#131313] to-[#080808] px-8 py-6 space-y-4 mb-24"
-            >
-              <li class="flex items-center gap-3">
-                <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
-                Best Gym
-              </li>
-              <li class="flex items-center gap-3">
-                <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
-                Expert Coaches
-              </li>
-              <li class="flex items-center gap-3">
-                <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
-                Good Workout Facilities
-              </li>
-              <li class="flex items-center gap-3">
-                <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
-                Consultation With Experts
-              </li>
-            </ul>
+      <div
+        class="xl:px-20 flex flex-col lg:flex-row justify-between gap-10 md:lg-20"
+      >
+        <div>
+          <ul
+            class="lg:min-w-[500px] bg-gradient-to-r from-[#131313] to-[#080808] px-8 py-6 space-y-4 mb-12"
+          >
+            <li class="flex items-center gap-3">
+              <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
+              Best Gym
+            </li>
+            <li class="flex items-center gap-3">
+              <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
+              Expert Coaches
+            </li>
+            <li class="flex items-center gap-3">
+              <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
+              Good Workout Facilities
+            </li>
+            <li class="flex items-center gap-3">
+              <p class="w-2 h-2 bg-[#FF921B] rounded-full"></p>
+              Consultation With Experts
+            </li>
+          </ul>
 
-            <button
-              class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-6 py-3 font-semibold cursor-pointer"
-            >
-              See More Benefits
-            </button>
-          </div>
+          <button
+            class="bg-gradient-to-r from-[#F66844] to-[#FF921B] px-6 py-3 font-semibold cursor-pointer"
+          >
+            See More Benefits
+          </button>
+        </div>
 
-          <div class="flex flex-col gap-8">
-            <img src="/images/join_us_01.png" alt="" class="w-[250px] pr-16" />
-            <img src="/images/join_us_02.png" alt="" class="w-[250px] pl-16" />
-          </div>
+        <div class="flex flex-col items-center lg:items-start gap-8">
+          <img
+            src="/images/join_us_01.png"
+            alt=""
+            class="w-[300px] lg:w-[250px] pr-16"
+          />
+          <img
+            src="/images/join_us_02.png"
+            alt=""
+            class="w-[300px] lg:w-[250px] pl-16"
+          />
         </div>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-[#0c0c0c]">
-      <div class="max-w-[1440px] mx-auto py-24 px-6 grid md:grid-cols-5 gap-20">
+      <div
+        class="max-w-[1440px] mx-auto py-24 px-6 flex flex-col lg:flex-row gap-30"
+      >
         <div class="flex items-center flex-col gap-3">
           <div class="flex items-center gap-2">
             <img
@@ -379,88 +399,94 @@
           </p>
         </div>
 
-        <div>
-          <h4 class="text-xl font-semibold mb-6">Company</h4>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >About</a
+        <div class="grid md:grid-cols-4 gap-10 lg:gap-20">
+          <div>
+            <h4 class="text-xl font-semibold mb-6">Company</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Blogs</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold mb-6">Contact</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Help \FAQ</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Press</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold mb-6">More</h4>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Program</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Plan</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
+                  >Method</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold mb-6">Popular Tags</h4>
+            <div class="flex flex-wrap gap-1.5">
+              <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
+                >Abs</span
               >
-            </li>
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >Careers</a
+              <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
+                >Workout</span
               >
-            </li>
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >Blogs</a
+              <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
+                >Boxing</span
               >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-6">Contact</h4>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >Help \FAQ</a
+              <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
+                >Gym</span
               >
-            </li>
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >Press</a
+              <span
+                class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer bg-gradient-to-r from-[#F66844] to-[#FF921B]"
+                >Facilities</span
               >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-6">More</h4>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >Program</a
+              <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
+                >Plans</span
               >
-            </li>
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]">Plan</a>
-            </li>
-            <li>
-              <a href="#" class="text-[#FFFFFF80] hover:text-[#FF921B]"
-                >Method</a
+              <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
+                >Trainers</span
               >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="text-xl font-semibold mb-6">Popular Tags</h4>
-          <div class="flex flex-wrap gap-1.5">
-            <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
-              >Abs</span
-            >
-            <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
-              >Workout</span
-            >
-            <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
-              >Boxing</span
-            >
-            <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
-              >Gym</span
-            >
-            <span
-              class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer bg-gradient-to-r from-[#F66844] to-[#FF921B]"
-              >Facilities</span
-            >
-            <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
-              >Plans</span
-            >
-            <span class="bg-[#FFFFFF80] px-2 py-1 text-sm cursor-pointer"
-              >Trainers</span
-            >
+            </div>
           </div>
         </div>
       </div>
-      <p class="bg-[#FF921B] py-4 text-center text-[#FFFFFF] mt-10">
+      <p
+        class="bg-[#FF921B] p-2 md:py-4 text-center text-[#FFFFFF] mt-6 lg:mt-10"
+      >
         © 2023 All Rights Reserved
       </p>
     </footer>
